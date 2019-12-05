@@ -1,0 +1,32 @@
+
+    <%= render partial: 'shared/search', locals: {
+      :search_url => "/search",
+      :title => t('archive._plural'),
+      :limit_options => [
+            ["#{t('actions.search')} #{t('search-limits.all')}",''],
+            [t('search-limit', :limit => t('search-limits.resources')),'resource'],
+            [t('search-limit', :limit => t('search-limits.digital')),'digital_object']
+          ],
+      :field_options => [
+            ["#{t('search_results.filter.fullrecord')}",''],
+            ["#{t('search_results.filter.title')}",'title'],
+            ["#{t('search_results.filter.creators')}",'creators_text'],
+            ["#{t('search_results.filter.notes')}", 'notes'],
+            ["#{t('search_results.filter.identifier')}", 'identifier']
+           ]
+    } %>
+
+	<div class="span8">
+	<h4>New to archival research?  Here is some useful vocabulary to remember:</h4>
+	<p>A "record group" can be considered a group of collections that share the same "provenance" (origin or source).  At the College, we use record groups to separate the collections of administrative departments (such as Library, Museum, Executive Office).</p>
+	<p>"Collections" are 1) a group of materials with some unifying characteristic; or 2) materials assembled by a person, organization, or repository from a variety of sources.</p>
+	<p>Collections are organized into "series", and sometimes "sub-series". Series and sub-series are often ordered by subject (e.g. "Administration" or "Medical institutions"); form (e.g. "Correspondence" or "Photographs"); or date. Organizing collections into series and sub-series makes the materials easier to search through and find relevant items.</p>
+	<p>Series and sub-series contain folders and the folders contain items. Some very detailed finding aids will list all the items in a collection (archivists refer to this as item-level description) instead of the folders (archivists refer to this as folder-level description).</p>
+	<p>A finding aid is a detailed catalog record of a manuscript/archival collection and will include the manuscript call number; dates; subject headings; notes; and a container list (inventory), which will list the series, sub-series, and folders, and the box numbers the materials are located in.</p>
+	<h4>Some tips for searching our finding aids:</h4>
+	<ol><li>When searching using phrases or names, be sure to put the phrase or name in double quotes ("anatomy acts" or "Silas Weir Mitchell").</li>
+	<li>Searches will return collection-level, series-level, and folder- or item-level results, which can be filtered on the right-hand side of the page.  "Archival records" will give you results of only series, sub-series, folders, and items.</li>
+	<li>Selecting a collection from the search results will take you to the main body of the finding aid.  To best view the inventory of the collection, click on the red bar where it says "Collection Organization."  You can then scroll down and see all of the items found in the collection.  This is currently the easiest way to search through a list of the items in a collection.</li>
+	<li>To request items from the Archives, please follow the link to the Library catalog by clicking "External documents" located in the "Expand All" section of the finding aid.  Once in the catalog, you will be able to log in and request specific boxes from collections.</li></ol>
+	<p>We are working on making this finding aid catalog more user-friendly. Please let us know if you have any issues or suggestions when making your research appointment.</p>
+	</div>

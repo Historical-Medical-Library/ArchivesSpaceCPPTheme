@@ -1,0 +1,1 @@
+The files in the plugins directory act as a theme by overriding the CSS and page templates for the AS PUI. Please see full instructions on the internal wiki to implement.

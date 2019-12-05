@@ -1,0 +1,6 @@
+<section  id="header">
+  <div class="row">
+    <div><% unless request.original_fullpath == '/' %>
+        <a title="CPP Archives Home" href="http://cpparchives.org"><% end %> <img class="logo" src="<%= asset_path(AppConfig[:pui_branding_img]) %>" alt="" /><% unless request.original_fullpath == '/' %></a><% end %> </div>
+  </div>
+</section>
